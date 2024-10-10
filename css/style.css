@@ -35,11 +35,11 @@ body
     flex-direction: row;
     flex-basis: 40%;
     background-color: black;
-    border-radius: 10px;
+    /* border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+    -o-border-radius: 10px; */
 
 }
 .header .menu
@@ -48,11 +48,11 @@ body
     flex-direction: row;
     flex-basis: 60%;
     background-color: black;
-    border-radius: 10px;
+    /* border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+    -o-border-radius: 10px; */
 
 }
 .logo h2{
@@ -171,6 +171,40 @@ body
 .footer p{
 
     color: white;
+}
 
+@media only screen and (max-width:949px)
+{
+    .container{
+        width: 100%;
+    }
+    .container .header
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+@media only screen and (max-width:569px)
+{
+    .container .header .menu ul li{
 
+        display: block;
+        margin-left: 10px;
+    }
+    .footer p{
+
+        text-align: center;
+    }
+}
+@media only screen and (max-width:677px)
+{
+    .main-box{
+
+        flex-direction: column;
+        
+    }
+    .main-box .box{
+        margin-top: 10px;
+    }
 }
